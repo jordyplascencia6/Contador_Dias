@@ -11,80 +11,103 @@
     <title>Contador Fondo de Ahorro</title>
 </head>
 <body>
+    <div class="container">
 
-    <div class="menu-inicial">
-        <li>Home</li>
-    </div>
-  
-    <div class="fecha">
-        <p class="texto"> Dias faltantes para el <span id="fecha">Fondo de ahorro</span></p>
+        <div class="menu-inicial">
+            <nav class="header">
+                    <div class="logo">
+                        <p class="logo">Contador Dias</p>
+                    </div>
+                    <div class="nav-menu" id="myNavMenu">
+                        <ul class="nav-menu-list">
+                            <li class="nav-list">
+                                <a href="#home" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#about" class="nav-link">about</a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#more" class="nav-link">more</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    
+        <!-----------------  CONTADOR ----------------------->
+        <div class="div-contador">
+            <div class="fecha">
+                <p class="texto"> Dias faltantes para <span id="fecha">Fondo de Ahorro</span></p>
+            </div>
+
+            <div class="Contador">
+                <div class="grupo">
+                    <p class="grande" id="dias">00</p>
+                    <p class="chico">Dias</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="horas">00</p> 
+                    <p class="chico">Horas</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="minutos">00</p>
+                    <p class="chico">Minutos</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="segundos">00</p>
+                    <p class="chico">Segundos</p>
+                </div>
+            </div>
+
+            <div class="fecha">
+                <p class="texto"> Dias faltantes para <span id="fecha">NAVIDAD</span></p>
+            </div>
+
+            <div class="Contador">
+                <div class="grupo">
+                    <p class="grande" id="dias2">00</p>
+                    <p class="chico">Dias</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="horas2">00</p> 
+                    <p class="chico">Horas</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="minutos2">00</p>
+                    <p class="chico">Minutos</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="segundos2">00</p>
+                    <p class="chico">Segundos</p>
+                </div>
+            </div>
+
+            <div class="fecha">
+                <p class="texto"> Tiempo faltante para <span id="fecha">Terminar turno</span></p>
+            </div>
+
+            <div class="Contador" id="cuentaAtras">
+                <!--<div class="grupo">
+                    <p class="grande" id="dias3">00</p>
+                    <p class="chico">Dias</p>
+                </div> -->
+                <div class="grupo">
+                    <p class="grande" id="horas3">00</p> 
+                    <p class="chico">Horas</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="minutos3">00</p>
+                    <p class="chico">Minutos</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="segundos3">00</p>
+                    <p class="chico">Segundos</p>
+                </div>
+            </div> 
+        </div>
     </div>
 
-    <div class="Contador">
-        <div class="grupo">
-            <p class="grande" id="dias">00</p>
-            <p class="chico">Dias</p>
-        </div>
-        <div class="grupo">
-            <p class="grande" id="horas">00</p> 
-            <p class="chico">Horas</p>
-        </div>
-        <div class="grupo">
-            <p class="grande" id="minutos">00</p>
-            <p class="chico">Minutos</p>
-        </div>
-        <div class="grupo">
-            <p class="grande" id="segundos">00</p>
-            <p class="chico">Segundos</p>
-        </div>
-    </div>
+    <script src="commands.js"></script> 
 
-    <div class="fecha">
-        <p class="texto"> Dias faltantes para <span id="fecha">NAVIDAD</span></p>
-    </div>
-
-    <div class="Contador">
-        <div class="grupo">
-            <p class="grande" id="dias2">00</p>
-            <p class="chico">Dias</p>
-        </div>
-        <div class="grupo">
-            <p class="grande" id="horas2">00</p> 
-            <p class="chico">Horas</p>
-        </div>
-        <div class="grupo">
-            <p class="grande" id="minutos2">00</p>
-            <p class="chico">Minutos</p>
-        </div>
-        <div class="grupo">
-            <p class="grande" id="segundos2">00</p>
-            <p class="chico">Segundos</p>
-        </div>
-    </div>
-
-    <div class="fecha">
-        <p class="texto"> Tiempo faltante para <span id="fecha">Terminar turno</span></p>
-    </div>
-
-    <div class="Contador" id="cuentaAtras">
-        <!--<div class="grupo">
-            <p class="grande" id="dias3">00</p>
-            <p class="chico">Dias</p>
-        </div> -->
-        <div class="grupo">
-            <p class="grande" id="horas3">00</p> 
-            <p class="chico">Horas</p>
-        </div>
-        <div class="grupo">
-            <p class="grande" id="minutos3">00</p>
-            <p class="chico">Minutos</p>
-        </div>
-        <div class="grupo">
-            <p class="grande" id="segundos3">00</p>
-            <p class="chico">Segundos</p>
-        </div>
-    </div>
-
-    <script src="commands.js"></script>  
 </body>
 </html>

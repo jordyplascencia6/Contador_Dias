@@ -29,12 +29,24 @@ body {
     background-color: var(--fondo);
     /*background: radial-gradient(circle, #516d72 0%, #516d72 75%, --blanvo 79%, --blanvo 100%);*/
     min-height: 100vh;
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     text-align: center;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+}
+
+/* ---------- Contadoooor ----------  */ 
+
+.div-contador{
+    position: relative;
+    display: block;
 }
 
 .fecha{
@@ -83,4 +95,44 @@ body {
         flex-direction: column;
         gap: .5rem;
     }
+}
+
+
+/* ------ Navagation Menu ------- */
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    background: #70797a;
+    padding-inline: 9vw;
+    transition: .3s;
+    z-index: 100 ;
+    line-height: 90px;
+}
+
+.logo {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.nac-menu, .nav-menu-list { 
+    display: flex;
+}
+
+.nav-menu, .nav-list{
+    list-style: none;
+    position: relative;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--Azul_detalles);
+    font-weight: 500;
+    padding-inline: 15px;
+    margin-inline: 20px;
 }
