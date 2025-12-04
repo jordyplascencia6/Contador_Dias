@@ -85,6 +85,7 @@ function actualizar(){
     let empezarTurno = new Date();
     let ahorita = new Date();
 
+    // Se establece las horas de cada variable 
     finTurno.setHours(15, 0, 0, 0);
     horaLunch.setHours(10, 30, 0, 0);
     empezarTurno.setHours(6, 0, 0, 0);
@@ -97,16 +98,24 @@ function actualizar(){
     let cuentaAtras = document.querySelector("#cuentaAtras")
     let fechaaa = document.querySelector("#fecha3")
 
+    //Si ya poso el fin de turno conotar hacia mañana 
     if(ahorita > finTurno){
         finTurno.setDate(finTurno.getDate()+1);
     }
 
-    if (ahorita < horaLunch){
-        distancia = horaLunch - ahorita;
-        fechaaa.innerHTML = "<p> Tiempo faltante para el <span>lunchecitooo </span></p>"
+    //Validación para saber si aún no empieza tu turno
+    if (ahorita < empezarTurno){
+        distancia = empezarTurno - ahorita;
+        fechaaa.innerHTML = "<p> Tiempo faltante para <span>Empezar Turno</span></p>";
     }else{
-        distancia = finTurno - ahorita;
-        fechaaa.innerHTML = "<p> Tiempo faltante para el <span>Terminar Turno</span></p>"
+        //validar tiempo para la hora de lunch
+        if (ahorita < horaLunch){
+            distancia = horaLunch - ahorita;
+            fechaaa.innerHTML = "<p> Tiempo faltante para el <span>lunchecitooo </span></p>"
+        }else{
+            distancia = finTurno - ahorita;
+            fechaaa.innerHTML = "<p> Tiempo faltante para el <span>Terminar Turno</span></p>"
+        }
     }
 
     //let distancia = finTurno - ahorita;
