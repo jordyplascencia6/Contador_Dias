@@ -81,24 +81,35 @@ function actualizar(){
 
     //Se consiguen las fechas 
     let finTurno = new Date();
+    let horaLunch = new Date();
+    let empezarTurno = new Date();
     let ahorita = new Date();
 
     finTurno.setHours(15, 0, 0, 0);
+    horaLunch.setHours(10, 30, 0, 0);
+    empezarTurno.setHours(6, 0, 0, 0);
+    
 
     //let parrafoDias3 = document.querySelector("#dias3");
     let parrafoHoras3 = document.querySelector("#horas3");
     let parrafoMinutos3 = document.querySelector("#minutos3");
     let parrafoSegundos3 = document.querySelector("#segundos3");
     let cuentaAtras = document.querySelector("#cuentaAtras")
+    let fechaaa = document.querySelector("#fecha3")
 
     if(ahorita > finTurno){
         finTurno.setDate(finTurno.getDate()+1);
     }
 
-        //Calculas la fecha actual casa segundo
-    //    let hoy = new Date().getTime();
+    if (ahorita < horaLunch){
+        distancia = horaLunch - ahorita;
+        fechaaa.innerHTML = "<p> Tiempo faltante para el <span>lunchecitooo </span></p>"
+    }else{
+        distancia = finTurno - ahorita;
+        fechaaa.innerHTML = "<p> Tiempo faltante para el <span>Terminar Turno</span></p>"
+    }
 
-    let distancia = finTurno - ahorita;
+    //let distancia = finTurno - ahorita;
 
     let miDia = 1000 * 60 * 60 * 24;
     let miHoras = 1000 * 60 * 60;
