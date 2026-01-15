@@ -1,5 +1,5 @@
 //creas una variable con la fecha destino 
-let fecha = new Date('December 15, 2025 00:00:00');
+let fecha = new Date('December 15, 2026 00:00:00');
 let miFecha = fecha.getTime();
 
 console.log(miFecha);
@@ -40,7 +40,7 @@ let intervalo = setInterval(() => {
 }, 1000);
 
 
-let fecha2 = new Date('December 25, 2025 00:00:00');
+let fecha2 = new Date('December 25, 2026 00:00:00');
 let miFecha2 = fecha2.getTime();
 
 let parrafoDias2 = document.querySelector("#dias2");
